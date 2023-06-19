@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout__header,
+.layout__container,
+.layout__footer {
+    width: 100%;
+}
+
+.layout__header {
+    flex: 0 0 auto;
+}
+
+.layout__container {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 0;
+    padding-top: 20px;
+}
+
+.layout__sidebar {
+}
+
+.layout__content {
+    min-width: 0;
+    width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout__outlet {
+    flex: 1 1 auto;
+}
+
+.layout__footer {
+    flex: 0 0 auto;
+}
+
+.auth-login__header {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+.auth-login__form {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+}
+
+
